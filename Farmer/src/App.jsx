@@ -5,6 +5,7 @@ import Register from "./Pages/Register";
 import UserProfile from "./Pages/UserProfile";
 import { AppContext } from "./Helpers/MyContext";
 import Home from "./Pages/Home";
+import LandingPage from "./Pages/LandingPage";
 import Cart from "./Pages/Cart";
 
 function App() {
@@ -15,11 +16,9 @@ function App() {
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
-        <Route
-          path="/profile"
-          element={user ? <UserProfile /> : <Navigate to="/login" />}
-        />
+        <Route path="/profile" element={user ? <UserProfile /> : <Navigate to="/login" />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/landingPage" element={<LandingPage />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
