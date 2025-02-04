@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GET } from '../Helpers/Api.jsx';
 import BGImage from "../assets/Freshroots1.png";
-import Logo from "../assets/Freshroots1.png"
 import Slide1 from "../assets/slide5.jpg";
 import Slide2 from "../assets/slide2.png";
 import Slide3 from "../assets/slide3.jpg";
